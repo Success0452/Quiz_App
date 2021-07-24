@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">Quiz App</string>
+    <string name="quiz_app">General Questions Quiz App</string>
+    <string name="question1">1. What is the smallest planet in our solar system?</string>
+    <string name="mercury">Mercury</string>
+    <string name="earth">Earth</string>
+    <string name="jupiter">Jupiter</string>
+    <string name="question2">2. What is the currency of Nigeria?</string>
+    <string name="nigeria_currency">Nigeria Currency?</string>
+    <string name="question3">3. What is the capital of New Zealand?</string>
+    <string name="wellington">Wellington</string>
+    <string name="delta">Delta</string>
+    <string name="england">England</string>
+    <string name="ekiti">Ekiti</string>
+    <string name="kwara">Kwara</string>
+    <string name="denmark">Denmark</string>
+    <string name="question4">4. Two states in Nigeria?</string>
+    <string name="choose_many">Choose many</string>
+    <string name="question5">5. How many human players are there on each side in a football match?</string>
+    <string name="_9">9</string>
+    <string name="_11">11</string>
+    <string name="_10">10</string>
+    <string name="submit">Submit</string>
+</resources>
