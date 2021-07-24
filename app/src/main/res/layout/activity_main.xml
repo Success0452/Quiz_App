@@ -180,6 +180,7 @@
                 android:text="@string/kwara" />
 
             <CheckBox
+                android:id="@+id/incorrectAnswer"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="10dp"

@@ -18,6 +18,7 @@ public class MainActivity extends AppCompatActivity {
     RadioGroup questionThreeAnswer;
     CheckBox questionFourAnswerOne;
     CheckBox questionFourAnswerTwo;
+    CheckBox questionFourIncorrectAnswer;
     RadioGroup questionFiveAnswer;
 
     Button submit;
@@ -45,6 +46,8 @@ public class MainActivity extends AppCompatActivity {
         // locate view for answerFour2
         questionFourAnswerTwo = findViewById(R.id.question_four_correct2);
 
+        questionFourIncorrectAnswer = findViewById(R.id.incorrectAnswer);
+
         // locate view for answerFive
          questionFiveAnswer = findViewById(R.id.question5);
 
@@ -56,7 +59,12 @@ public class MainActivity extends AppCompatActivity {
         CheckThroughTheQuestion();
 
         //Display Toast Message of correct answer
-        Toast.makeText(this, Correct + " Out Of 5", Toast.LENGTH_LONG).show();
+        if (Correct == 0 || Correct == 1 || Correct == 2) {
+            Toast.makeText(this, Correct + " Out Of 5" + " Poor Result, Research more", Toast.LENGTH_LONG).show();
+        }else if (Correct == 3 || Correct == 4 || Correct == 5)
+        {
+            Toast.makeText(this, Correct + " Out Of 5" + " Excellent, Congratulations ", Toast.LENGTH_LONG).show();
+        }
     }
 
     //boolean method that verify the right answer
@@ -77,7 +85,12 @@ public class MainActivity extends AppCompatActivity {
 
     //boolean method that verify the right answer
     private boolean CheckBoxQuestion4() {
-        return questionFourAnswerOne.isChecked() && questionFourAnswerTwo.isChecked();
+        if (questionFourAnswerOne.isChecked() && questionFourAnswerTwo.isChecked() && !questionFourIncorrectAnswer.isChecked()){
+            return true;
+        }{
+            return false;
+        }
+
     }
 
     //boolean method that verify the right answer
